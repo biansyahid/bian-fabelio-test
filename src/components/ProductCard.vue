@@ -42,9 +42,9 @@ export default {
     },
     productPrice () {
       if (this.product.price) {
-        return `Rp ${Number(this.product.price).toLocaleString('id')}`
+        return `${Number(this.product.price).toLocaleString('id')} IDR`
       }
-      return 'Rp 0'
+      return '0 IDR'
     },
     productFurnitureStyle () {
       if (this.product.furniture_style.length > 0) {
